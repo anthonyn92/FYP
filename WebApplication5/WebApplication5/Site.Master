@@ -1,0 +1,155 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="WebApplication5.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <STYLE TYPE="text/css"> 
+<!-- 
+BODY { background-image: url(fist-only_opt.png) }
+BODY { background-repeat: no-repeat }
+BODY { background-position: center }
+-->
+</STYLE>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<%--Toggles the icon ▼--%>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.toggle-login').click(function () {
+            $(this).next('#login-content').slideToggle();
+            $(this).toggleClass('active');
+
+            if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+            else $(this).find('span').html('&#x25BC;')
+        })
+    });
+</script>
+
+<%--Handling Menu and items--%>
+
+<script type="text/javascript" >
+    $(document).ready(function () {
+
+        $(".mainmenu").click(function () {
+            var X = $(this).attr('id');
+            if (X == 1) {
+                $(".submenu").hide();
+                $(this).attr('id', '0');
+            }
+            else {
+                $(".submenu").show();
+                $(this).attr('id', '1');
+            }
+        });
+
+        //Mouse click on sub menus
+        $(".submenu").mouseup(function () {
+            return false
+        });
+
+        //Mouse click on my account link
+        $(".mainmenu").mouseup(function () {
+            return false
+        });
+
+
+        //On Document Click
+        $(document).mouseup(function () {
+            $(".submenu").hide();
+            $(".mainmenu").attr('id', '');
+        });
+    });
+</script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../punch%20logo.png">
+   
+    <title>Martial Arts Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+     
+    <!-- Custom styles for this template 
+    <link href="starter-template.css" rel="stylesheet"> -->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+      
+<body background ="fist-only_opt.png" bgproperties="fixed">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Welcome.aspx" >Martial Arts Management</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <div class="container" align="right">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+
+
+                </asp:ContentPlaceHolder>
+                </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Welcome.aspx">Home</a></li>
+            <li><a href="CreateAccount.aspx">Create Account</a></li>
+            <li><a href="PasswordRecovery.aspx">Recovery</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+       <br />
+          <br />
+
+          <br />
+
+          <br />
+          
+        
+      </div>
+
+    </div><!-- /.container -->
+      <div class="container" align="Center">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >
+
+
+                </asp:ContentPlaceHolder>
+                </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+      <script src="Scripts/bootstrap.min.js"></script>
+  </body>
+</html>
+

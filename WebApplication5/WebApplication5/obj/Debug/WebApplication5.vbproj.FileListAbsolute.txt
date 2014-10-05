@@ -1,0 +1,11 @@
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\bin\WebApplication5.dll
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\bin\WebApplication5.xml
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\bin\MySql.Data.dll
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\bin\MySql.Web.dll
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.Resources.resources
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.vbproj.GenerateResource.Cache
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.xml
+c:\users\anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\Users\Anthony\documents\visual studio 2012\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.vbprojResolveAssemblyReference.cache
